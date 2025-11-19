@@ -18,10 +18,8 @@ public class User {
     @Column(unique = true, nullable = false)
     private String email;
 
-    // stored only for email/password users; for OAuth users this can be null
     private String password;
 
-    // e.g. local, google
     private String provider;
 }
 
